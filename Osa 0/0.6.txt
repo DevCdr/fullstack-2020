@@ -1,0 +1,17 @@
+note over selain:
+selain alkaa suorittaa js-koodia,
+joka luo muistiinpanon, lisää sen
+muistiinpanojen listalle, piirtää
+listan uudelleen ja lähettää
+muistiinpanon palvelimelle
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over palvelin:
+palvelin alkaa suorittaa js-koodia,
+joka tallentaa pyynnön mukana tulevan
+JSON-datan taulukkoon
+end note
+
+palvelin-->selain: status-koodi 201
