@@ -1,0 +1,14 @@
+POST http://localhost:3001/api/patients/4/entries
+Content-Type: application/json
+
+{
+  "date": "2020-05-20",
+  "type": "Hospital",
+  "specialist": "Dr. Pepper",
+  "diagnosisCodes": ["J06.9"],
+  "description": "Suspected COVID-19 infection!",
+  "discharge": {
+    "date": "2020-06-04",
+    "criteria": "Negative test result."
+  }
+}
